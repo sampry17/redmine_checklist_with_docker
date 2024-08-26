@@ -18,7 +18,7 @@ cd redmine_checklist_with_docker
 ### 2. Запуск Docker Compose
 
 ```bash
-docker-compose up -d
+docker-compose up
 ```
 
 ### 3. Клонирование плагина Checklists
@@ -30,7 +30,8 @@ sudo git clone https://github.com/sampry17/redmine_checklists.git storage/docker
 ### 4. Перезапуск контейнеров
 
 ```bash
-docker-compose up -d
+docker-compose restart
+docker-compose up
 ```
 
 ### 5. Вход в контейнер Redmine
@@ -49,7 +50,8 @@ bundle exec rake redmine:plugins:migrate NAME=redmine_checklists RAILS_ENV=produ
 ### 7. Перезапуск контейнеров
 
 ```bash
-docker-compose up -d
+docker-compose restart
+docker-compose up
 ```
 
 ### Доступ к Redmine 
